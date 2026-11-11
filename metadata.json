@@ -1,0 +1,6 @@
+{
+  "name": "SENA Inducción Interactiva",
+  "description": "Plataforma interactiva de inducción institucional SENA: seguimiento del proceso formativo, aprendizaje de normativa, símbolos patrios e institucionales, dilemas éticos y evaluación dinámica.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

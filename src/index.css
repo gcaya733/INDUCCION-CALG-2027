@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --color-sena-green: #39a900;
+  --color-sena-green-dark: #2e8600;
+  --color-sena-green-light: #4cd400;
+  --color-sena-navy: #00324d;
+  --color-sena-orange: #fc7323;
+}
+
+/* Perspective & 3D card flip styles for flashcards */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Screen blur transition for dark mode activation */
+.theme-transition-wrapper {
+  transition: filter 0.4s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.35s ease, color 0.35s ease;
+}
+
+.theme-transition-active {
+  filter: blur(14px);
+  pointer-events: none;
+}
